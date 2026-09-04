@@ -1,0 +1,35 @@
+name: Check & Refresh Active Coupons
+
+on:
+  schedule:
+    # 每天 UTC 时间 20:00 (北京时间凌晨 04:00) 自动巡检运行
+    - cron: '0 20 * * *'
+  push:
+    paths:
+      - 'coupons.json'
+  workflow_dispatch: # 允许在网页上随时手动点击运行
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: pip install requests
+
+      - name: 执行卡券清洗脚本
+        run: python scripts/check_coupons.py
+
+      - name: 自动提交生成的 active_coupons.json
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add active_coupons.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto refresh active coupons [skip ci]" && git push)
