@@ -1,0 +1,15 @@
+[
+  {
+    "id": "A101",
+    "brand": "星巴克",
+    "title": "星冰乐三重奏 / 茶拿铁三大杯",
+    "discountText": "4.7 折 · 爆款自提专享",
+    "iconName": "cup.and.saucer.fill",
+    "iconColorHex": "#00704A",
+    "expiresAt": "2026-10-30T23:59:59Z",
+    "storeName": "星巴克 (周边适用门店)",
+    "distanceText": "步行可达",
+    "universalLink": "http://dpurl.cn/vejkYKMz",
+    "isUsed": false
+  }
+]
