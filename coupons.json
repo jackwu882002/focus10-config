@@ -15,14 +15,14 @@
   {
     "id": "A102",
     "brand": "Tims 天好咖啡",
-    "title": "鲜萃咖啡 + 贝果元气套餐",
-    "discountText": "立省 ¥12 · 爆款专享",
+    "title": "超值10次卡 · 15款大杯咖啡任选",
+    "discountText": "6 折 · 单杯仅 ¥18.9",
     "iconName": "takeoutbag.and.cup.and.straw.fill",
     "iconColorHex": "#C8102E",
-    "expiresAt": "2026-11-15T23:59:59Z",
+    "expiresAt": "2026-10-31T23:59:59Z",
     "storeName": "Tims 咖啡 (周边适用门店)",
     "distanceText": "步行可达",
-    "universalLink": "http://dpurl.cn/你的新短链",
+    "universalLink": "http://dpurl.cn/d0VEkKPz",
     "isUsed": false
   }
 ]
