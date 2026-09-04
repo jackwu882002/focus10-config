@@ -24,5 +24,18 @@
     "distanceText": "步行可达",
     "universalLink": "http://dpurl.cn/d0VEkKPz",
     "isUsed": false
-  }
+  },
+  {
+  "id": "A103",
+  "brand": "金属狗共享健身",
+  "title": "24h自助验卡体验卡 (限购1次)",
+  "discountText": "4.5 折 · 体验仅需 ¥9.9",
+  "iconName": "figure.strengthtraining.traditional",
+  "iconColorHex": "#FF5722",
+  "expiresAt": "2026-10-31T23:59:59Z",
+  "storeName": "金属狗26h共享健身 (多店通用)",
+  "distanceText": "步行可达",
+  "universalLink": "http://dpurl.cn/mfWWSeBz",
+  "isUsed": false
+   }
 ]
